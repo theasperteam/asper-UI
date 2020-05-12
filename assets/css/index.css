@@ -178,10 +178,11 @@ a{
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: fixed;
-  top: 50%;
+  top: 60%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 3;
 }
 
 /* Style the icon bar links */
@@ -265,9 +266,9 @@ a{
 /*FOOTER*/
 
 footer {
-  background: #16222A;
-  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
-  background: linear-gradient(59deg, #3A6073, #16222A);
+  background: #000;
+  /*background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);*/
   color: white;
   margin-top:100px;
 }
@@ -375,4 +376,17 @@ ul.social-network li {
 
 .social-network a {
   background-color: #F9F9F9;
+}
+
+
+
+
+.about{
+    
+    background-image: url("assets/images/backabout.jpg"); 
+    background-repeat: no-repeat; 
+    background-position: center top; 
+    background-size: cover; 
+    z-index: -3;
+    text-decoration-color: #ffffff!important;
 }
